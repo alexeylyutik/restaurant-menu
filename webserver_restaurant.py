@@ -26,6 +26,11 @@ class webServerHandler(BaseHTTPRequestHandler):
                 output += "<html><body>"
                 for restaurant in restaurants:
                     output += restaurant.name
+                    output += "</br>"
+                    # Objective 2 -- Add Edit and Delete Links
+                    output += "<a href ='#' >Edit </a> "
+                    output += "</br>"
+                    output += "<a href =' #'> Delete </a>"
                     output += "</br></br></br>"
 
                 output += "</body></html>"
@@ -43,6 +48,7 @@ def main():
     except KeyboardInterrupt:
         print '^C received, shutting down server'
         server.socket.close()
+
 
 if __name__ == '__main__':
     main()
