@@ -3,7 +3,7 @@ It's data driven web application to create, add, delete restaurants from server.
 
 To run this final project
 
-1. Navigate to the Full-Stack-Foundations/Lesson-4/Final-Project directory inside the vagrant environment
+1. Navigate to the /restaurant-menu directory inside the vagrant environment
 
 2. run database_setup.py to create the database
 
